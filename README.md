@@ -1,8 +1,13 @@
 # CodeZIP 🌌
 
-**CodeZIP**: The ultimate tool for students and young developers to convert text-based project descriptions into downloadable zip files, ready for VS Code. Paste a README with a directory structure, and CodeZIP creates a lightweight, organized project in seconds. Built with a neon-lit, futuristic UI, it’s designed to spark creativity and make coding fun.
+A sleek tool to convert project descriptions into downloadable zip files, ready for VS Code. Paste a README, get a zip, and code! Built by subatomicERROR with a neon, futuristic vibe for students and developers.
 
 ## 🚀 Features
+- Paste project descriptions and generate zips.
+- Works online (browser) and offline (cached).
+- VS Code-ready with settings included.
+- Neon UI, lightweight (~5MB).
+
 - **Paste & Zip**: Turn project descriptions into zips with one click.
 - **VS Code Ready**: Includes `.vscode/settings.json` for seamless integration.
 - **Lightweight**: <5MB footprint, runs offline.
