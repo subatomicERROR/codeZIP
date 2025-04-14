@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(180deg, #000, #1a1a1a);
+  color: #fff;
+}
+
+@keyframes particles {
+  0% { transform: translateY(0); opacity: 0.3; }
+  100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #00ff00;
+  animation: particles 6s linear infinite;
+}
+
+.glow {
+  text-shadow: 0 0 12px #00ff00, 0 0 24px #00ff00;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.5);
+}
+
+.input-glow {
+  @apply border border-green-500 bg-gray-900 text-white p-3 rounded focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-300 transition;
+}
+
+.textarea-glow {
+  @apply border border-green-500 bg-gray-900 text-white p-3 rounded focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-300 transition resize-none;
+}
+
+.chat-message span {
+  @apply inline-block p-2 rounded max-w-[80%];
+}
+
+.chat-user {
+  @apply bg-green-500 text-black;
+}
+
+.chat-assistant {
+  @apply bg-gray-700 text-white;
+}
